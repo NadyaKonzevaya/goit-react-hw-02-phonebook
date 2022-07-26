@@ -1,5 +1,6 @@
 import { Component } from "react";
 import { nanoid } from 'nanoid';
+import PropTypes from "prop-types";
 import {Form, Label, Input, Button} from "./PhonebookForm.styled"
 
 // import { Formik, Form, Field, ErrorMessage } from "formik";
@@ -61,6 +62,12 @@ class PhonebookForm extends Component {
             </Form>
         )
     }
+}
+
+PhonebookForm.propTypes = {
+    id: PropTypes.string,
+    name: PropTypes.string,
+    number: PropTypes.string,
 }
 // начала на formik
 // const PhonebookForm = () => {

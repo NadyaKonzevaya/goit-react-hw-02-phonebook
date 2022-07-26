@@ -1,4 +1,5 @@
 import { Component } from "react";
+import PropTypes from "prop-types";
 import PhonebookForm from "./PhonebookForm";
 import ContactList from "./ContactList";
 import Filter from "./Filter";
@@ -54,3 +55,8 @@ export class App extends Component {
     );
   }
 };
+
+App.propTypes = {
+  contacts: PropTypes.array,
+  filter: PropTypes.string
+}

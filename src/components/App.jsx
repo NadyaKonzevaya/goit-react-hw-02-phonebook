@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import PhonebookForm from "./PhonebookForm";
 import ContactList from "./ContactList";
 import Filter from "./Filter";
+import { Container } from "./App.styled";
 
 export class App extends Component {
   state = {
@@ -45,13 +46,13 @@ export class App extends Component {
     const filteredContacts = this.getFilteredContacts();
   
     return (
-    <div>
+    <Container>
       <h1>Phonebook</h1>
       <PhonebookForm addContact={this.addContact} />
       <h2>Contacts</h2>
       <Filter value={ this.state.filter} onChange={this.handleFilter}  />
       <ContactList value={filteredContacts} onDeleteContact={this.deleteContact} />
-    </div>
+    </Container>
     );
   }
 };

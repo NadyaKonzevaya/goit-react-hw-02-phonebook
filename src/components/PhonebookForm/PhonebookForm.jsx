@@ -1,7 +1,7 @@
 import { Component } from "react";
 import { nanoid } from 'nanoid';
 import PropTypes from "prop-types";
-import {Form, Label, Input, Button} from "./PhonebookForm.styled"
+import {Form, Label, InputName, Button} from "./PhonebookForm.styled"
 
 // import { Formik, Form, Field, ErrorMessage } from "formik";
 // const initialValues = { name: "", };
@@ -37,7 +37,7 @@ class PhonebookForm extends Component {
             <Form onSubmit={this.handleSubmit}>
                 <Label htmlFor="name">
                     <span>Name</span>
-                    <Input
+                    <InputName
                         onChange={this.handleChange}
                         type="text"
                         name="name"
@@ -48,7 +48,7 @@ class PhonebookForm extends Component {
                 </Label>
                 <Label htmlFor="number">
                     <span>Number</span>
-                    <Input
+                    <InputName
                         onChange={this.handleChange}
                         type="tel"
                         name="number"

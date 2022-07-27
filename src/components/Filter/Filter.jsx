@@ -1,5 +1,5 @@
-import { InputName, Label } from "../PhonebookForm/PhonebookForm.styled";
-import { Container } from "./Filter.styled";
+import {Label } from "../PhonebookForm/PhonebookForm.styled";
+import { Container, InputName } from "./Filter.styled";
 
 const Filter = ({ value, onChange }) => (
     <Container>

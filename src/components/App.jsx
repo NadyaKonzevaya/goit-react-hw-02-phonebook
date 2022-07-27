@@ -48,7 +48,7 @@ export class App extends Component {
     return (
     <Container>
       <h1>Phonebook</h1>
-      <PhonebookForm addContact={this.addContact} />
+      <PhonebookForm onAddContact={this.addContact} />
       <h2>Contacts</h2>
       <Filter value={ this.state.filter} onChange={this.handleFilter}  />
       <ContactList value={filteredContacts} onDeleteContact={this.deleteContact} />
